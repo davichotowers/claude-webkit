@@ -1,14 +1,10 @@
 {
   "mcpServers": {
     "playwright": {
-      "command": "npx",
+      "command": "sh",
       "args": [
-        "-y",
-        "@playwright/mcp@latest",
-        "--browser",
-        "chromium",
-        "--executable-path",
-        "/opt/pw-browsers/chromium-1194/chrome-linux/chrome"
+        "-c",
+        "exec npx -y @playwright/mcp@latest --browser chromium --executable-path /opt/pw-browsers/chromium-1194/chrome-linux/chrome --proxy-server=\"$HTTPS_PROXY\""
       ]
     }
   }
