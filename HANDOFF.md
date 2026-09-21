@@ -93,10 +93,13 @@
 
 ## Bocetos ya aprobados/entregados (fuera del código, como artifacts)
 
-- Dossier de dirección de diseño v1→v4 (paleta, tipografía, ícono, HUD) — v4 es la versión final aprobada.
-- PDF de settings de exportación de video (DaVinci Resolve) — ya entregado al cliente.
-- Boceto de tarjetas v2 (destacada + bitácora) — mejor que v1, pero el cliente pidió explorar otra dirección antes de decidir.
-- Boceto de scroll full-frame con parallax — construido, pendiente de aprobación y de sumarle el detalle de la referencia `depoluxe.xyz`.
+- **Dossier de dirección de diseño v4 (final, aprobado)** — paleta, tipografía, ícono, HUD: https://claude.ai/code/artifact/a4a45567-42b4-4d5c-9dce-69f16f479ef4
+  - Versiones previas (referencia histórica, no usar como estado actual): [v1](https://claude.ai/code/artifact/f78405e2-b103-44a4-8b5e-eb34d09cb734) · [v2](https://claude.ai/code/artifact/eaffeae4-71d8-4151-a908-eb8953d57162) · [v3](https://claude.ai/code/artifact/62a5e4cf-6538-45ef-8325-e36e45c08170)
+- **Boceto de tarjetas v2** (destacada + bitácora) — mejor que v1 (grid parejo, descartado), pero el cliente pidió explorar otra dirección antes de decidir: https://claude.ai/code/artifact/9102ec67-f752-4511-826b-d630346b8f11
+- **Boceto de scroll full-frame con parallax** — construido, pendiente de aprobación y de sumarle el detalle de la referencia `depoluxe.xyz`: https://claude.ai/code/artifact/e10b55b5-708d-408d-9322-afcb2e7c3187
+- **PDF de settings de exportación de video (DaVinci Resolve)** — ya entregado al cliente vía descarga directa en el chat; no vive en el repo. El cliente lo tiene guardado en su equipo. Si hace falta de nuevo, se puede regenerar con la misma información que está en la sección "Video — settings de exportación" de este documento.
+
+> Nota: las fotos de referencia que el cliente subió directo al chat (tomas del cañón, referencia de logotipo "Forces of Nature") **no se pudieron migrar** — nunca hubo acceso a esos archivos, solo se vieron dentro de esa conversación. Las decisiones que salieron de ellas (paleta exacta, hex codes) ya están en este documento; solo haría falta volver a compartir las fotos si se necesita referenciarlas visualmente de nuevo.
 
 ---
 
