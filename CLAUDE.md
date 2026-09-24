@@ -121,7 +121,7 @@ Install only what you need: `npx shadcn@latest add [component-names] -y`
 - `shadcn init` fails → ensure you're in `site/` directory, try `npx shadcn@latest init --defaults`
 - `npm install` fails → `rm -rf node_modules package-lock.json && npm install`
 
-**NEXT:** Proceed immediately to Phase 4. Do not ask the user before starting to build.
+**NEXT:** Before starting to build, present a brief plan to the user and wait for their OK. Do not start Phase 4 until they approve.
 
 ### Phase 4: Build
 Build the landing page inside `site/`. Write ALL files without asking for per-section approval. The user will review the complete page in Phase 5.
