@@ -14,7 +14,17 @@ and in **Phase 2 (Design System)** to extract branding from sites the user likes
 
 The API key is injected automatically by the environment (`FIRECRAWL_API_KEY` or proxy).
 **Never** ask the user for a key, never pass `-k/--api-key`, and never print or write keys to files.
-Check the setup with `firecrawl --status` if something fails.
+
+In cloud sessions the proxy adds the real key to every request to `api.firecrawl.dev`,
+but the CLI refuses to run ("Not authenticated") unless it sees *some* key locally.
+Run this once per shell before any `firecrawl` command — it sets a non-secret
+placeholder only when no key exists, and the proxy swaps in the real one:
+
+```bash
+export FIRECRAWL_API_KEY="${FIRECRAWL_API_KEY:-fc-proxy-injected}"
+```
+
+After that, `firecrawl --status` shows "Authenticated via FIRECRAWL_API_KEY".
 
 ## Which command to use
 
@@ -118,7 +128,7 @@ Always pass `--limit` to control credits.
 
 | Problem | Fix |
 |---------|-----|
-| Auth error | Run `firecrawl --status`; the key comes from the environment — tell the user it isn't configured, don't ask for it |
+| "Not authenticated" / auth error | Run the `export FIRECRAWL_API_KEY=...` line from Authentication. If it still fails, the key isn't configured in the environment — tell the user, don't ask for it |
 | Empty/partial content | Add `--wait-for 3000` |
 | Too much noise | Add `--only-main-content` or `--exclude-tags nav,footer` |
 | Blocked site | Try `--proxy auto` |
