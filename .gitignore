@@ -37,3 +37,6 @@ yarn-error.log*
 playwright-cli-screenshots/
 *.png
 !docs/**/*.png
+
+# Firecrawl output
+.firecrawl/
