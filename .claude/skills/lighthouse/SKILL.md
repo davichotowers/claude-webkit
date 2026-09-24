@@ -90,7 +90,7 @@ Each is 0–100. **90–100 green (good), 50–89 orange (needs work), 0–49 re
 | **Best Practices** | Security and modern-web hygiene: HTTPS, no console errors, correct image aspect ratios, no deprecated APIs, CSP/headers. | Remove console errors, fix image sizes, avoid third-party scripts with known issues. |
 | **SEO** | Basic crawlability: `<title>`, meta description, `lang`, valid links with descriptive text, crawlable, mobile viewport, `robots.txt`. | Set `metadata` in `layout.tsx`, descriptive link text, `robots.ts`/`sitemap.ts`. For deeper SEO use the `seo-audit` skill. |
 
-When reporting to the user, give the 4 numbers first, then at most 3 concrete fixes in plain language. Then fix them (Phase 5 rules: don't ask, just do it) and re-run to show the new scores.
+When reporting to the user, give the 4 scores first, then at most 3 concrete fixes in plain language. Then ASK the user before applying any change to their website — never edit site files without their explicit approval.
 
 ## Troubleshooting
 
